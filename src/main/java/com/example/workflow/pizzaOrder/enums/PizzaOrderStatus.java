@@ -1,9 +1,11 @@
-package com.example.workflow.pizzaOrder.model.enums;
+package com.example.workflow.pizzaOrder.enums;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 @AllArgsConstructor
-public enum OrderStatus {
+@Getter
+public enum PizzaOrderStatus {
     ACKNOWLEDGE("acknowledge"),
     IN_PROGRESS("progress"),
     COMPLETED("complete"),
@@ -11,5 +13,5 @@ public enum OrderStatus {
     CANCELLED("cancelled"),
     FAILED("failed");
 
-    private String value;
+    private final String value;
 }

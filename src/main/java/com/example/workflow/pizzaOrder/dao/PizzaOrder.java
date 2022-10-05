@@ -1,6 +1,7 @@
-package com.example.workflow.pizzaOrder.model.dao;
+package com.example.workflow.pizzaOrder.dao;
 
-import com.example.workflow.pizzaOrder.model.enums.OrderStatus;
+import com.example.workflow.pizza.dao.Pizza;
+import com.example.workflow.pizzaOrder.enums.PizzaOrderStatus;
 import lombok.*;
 
 import javax.persistence.*;
@@ -22,7 +23,7 @@ public class PizzaOrder {
     private Set<Pizza> pizza;
 
     @Enumerated(EnumType.STRING)
-    private OrderStatus status;
+    private PizzaOrderStatus status;
 
     private OffsetDateTime orderDate = OffsetDateTime.now();
 }

@@ -1,4 +1,6 @@
-package com.example.workflow.pizzaOrder.model.dto;
+package com.example.workflow.pizza.dto;
+
+import com.example.workflow.pizza.dto.IngredientsDto;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
